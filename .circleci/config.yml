@@ -23,13 +23,14 @@ jobs:
 
 
   information:
-    steps:
-      - run:
-        name: what is your name
-        command: whoami
-      - run:
-        name: workdir
-        command: pwd
+     executor: node/default
+     steps:
+        - run:
+           name: what is your name
+          command: whoami
+        - run:
+          name: workdir
+          command: pwd
     
   
 
