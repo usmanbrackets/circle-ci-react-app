@@ -20,8 +20,25 @@ jobs:
           root: ~/project
           paths:
             - .
+
+
+  information:
+    steps:
+      -run:
+        name: what is your name
+        command: whoami
+      -run:
+        name: workdir
+        command: pwd
+    
+  
+
+
 workflows:
+
+
   test_my_app:
     jobs:
       - build_and_test
+      - information
     
