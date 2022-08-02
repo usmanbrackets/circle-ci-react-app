@@ -27,10 +27,10 @@ jobs:
      steps:
         - run:
            name: what is your name
-          command: whoami
+           command: whoami
         - run:
-          name: workdir
-          command: pwd
+           name: workdir
+           command: pwd
     
   
 
