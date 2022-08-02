@@ -24,10 +24,10 @@ jobs:
 
   information:
     steps:
-      -run:
+      - run:
         name: what is your name
         command: whoami
-      -run:
+      - run:
         name: workdir
         command: pwd
     
